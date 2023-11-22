@@ -1,0 +1,21 @@
+body {
+    background: white;
+}
+
+.card-body a {
+    position: relative;
+    float: right;
+    top: 8px;
+    font-size: 15px;
+    
+}
+
+.card:hover {
+    color: rgb(92, 1, 92);
+    border-color: rgb(92, 1, 92);
+}
+
+header img {
+    object-fit: cover;
+}
+
