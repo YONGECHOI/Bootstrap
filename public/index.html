@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Bootstrap</title>
+    <title>Bootstrap - Harivadan & Yonge</title>
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/main.css"/>
@@ -167,9 +167,94 @@
                             </div>
                         </div>
 
-                      
+        
                     </div>
                 </div>
+                
+                     
+
+                <!-- unresolved tickets -->
+                <div class="container mt-5">
+                    <div class="row">
+                        <!-- Card with List -->
+                        <div class="col-md-6 mb-4 ps-0">
+                            <div class="card h-100">
+                                <div class="card-body d-flex flex-column justify-content-between p-0">
+                                    <div>    
+                                        <h5 class="card-title ps-3 pe-3 pt-3">Unresolved tickets <a href="#" class="position-relative float-end text-decoration-none">View details</a> </h5>
+                                        <p class="card-text text-secondary ps-3">Group: <span class="text-secondary-emphasis">Support</span></p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                    <!-- mouse custom-hover over the list using list-group-item-action -->
+                                        <li class="list-group-item list-group-item-action border-bottom pt-4 pb-4">Waiting on Feature Request <span class="position-relative float-end">4238</span></li>
+                                        <li class="list-group-item list-group-item-action border-bottom pt-4 pb-4">Awaiting Customer Response <span class="position-relative float-end">1005</span></li>
+                                        <li class="list-group-item list-group-item-action border-bottom pt-4 pb-4">Awaiting Developer Fix <span class="position-relative float-end">914</span></li>
+                                        <li class="list-group-item list-group-item-action border-bottom pt-4 pb-4">Pending <span class="position-relative float-end">218</span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card with Task Checklist -->
+                        <div class="col-md-6 mb-4 pe-0">
+                            <div class="card h-100">
+                                <div class="card-body d-flex flex-column justify-content-between">
+                                    <h5 class="card-title mb-3">Tasks<a href="#" class="position-relative float-end text-decoration-none">View all</a></h5>
+                                    <p class="card-text text-secondary">Today</p>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item pt-3">
+                                        
+                                            <!-- Button trigger modal -->
+                                            <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                Click to create a new task
+                                            </button>
+
+
+<!------------------------------- Modal ------------------------------->
+
+
+                                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">Add a new task</h1>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" id="input1" aria-describedby="text" placeholder="Create a task">
+                                                        </div>
+                                                    </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item pt-3">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxStretched">
+                                            <label class="form-check-label stretched-link" for="firstCheckboxStretched">Finish ticket update </label><span class="btn btn-warning position-relative float-end text-uppercase text-white rounded-3">urgent</span>
+                                        </li>
+                                        <li class="list-group-item pt-3">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxStretched">
+                                            <label class="form-check-label stretched-link" for="secondCheckboxStretched">Create new ticket example</label><span class="btn btn-success position-relative float-end text-uppercase text-whiterounded-3">new</span>
+                                        </li>
+                                        <li class="list-group-item pt-3">
+                                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxStretched">
+                                            <label class="form-check-label stretched-link" for="thirdCheckboxStretched">Update ticket report</label><span class="btn btn-light position-relative float-end text-uppercase rounded-3">default</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </main>
         </div>
     </div>
